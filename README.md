@@ -1,5 +1,10 @@
 # The inference code for the ASC24 competition
-本人于2023年12月份参加了世界超级计算机计算大赛(ASC24),该比赛中涉及大模型Llama2的推理优化问题，特此记录我们的优化成果
+本人于2024年1月份参加了世界超级计算机计算大赛(ASC24),该比赛中涉及大模型Llama2的推理优化问题，特此记录我们的优化成果
+
+## Problem Description
+Large Language Models (LLMs) have revolutionized the field of AI, demonstrating unprecedented capacity across a wide range of tasks. However, the inference process for LLMs poses certain challenges. For instance, the models are often too large to fit into memory, resulting in prolonged inference times and substantial computational costs. These obstacles hinder their widespread implementation in various applications.
+To emphasize the significance of LLM inference and inspire enthusiasm among undergraduatesin this field, LLaMA2-70B, a LLM with 70 billion parameters and a dataset with 10 thousand samples provided by the Committee are used to optimize inference performance in the preliminary of ASC24. 
+Despite the availability of optimized and high-performance inference frameworks such as TensorRT-LLM and vLLM, we encourage participants to begin with the baseline code and build a tailored, high-performance inference engine, considering the architectural characteristics of their HPC cluster. Also, during the preliminary stage, to discourage teams from focusing solely on low-precision optimization, participants are only permitted to use FP16 or BF16 precision based on their computing devices. The use of 8-bit or any numerical precision lower than that is strictly prohibited. Participants are required to provide a detailed description of their optimization strategies as well as the results achieved in their proposals.
 
 ## File description
 
