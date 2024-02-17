@@ -60,7 +60,13 @@ In addition, we also test the performance of the first 100 entries of the datase
 | baseline             | 0.02                   | 10.17              | 29564.00                  | 52851.00                 | 1:26:34  | 1       |
 | baseline+speculative | 0.06                   | 30.37              | 29564.00                  | 52840.00                 | 00:29:00 | 2.99    |
 
+The following is the optimized outcome, encompassing throughout, tokens/s, and speedup.
 
+![throughout](log/throughout.png)
+
+![tokens/s](log/tokens.png)
+
+![speedup](log/speedup.png)
 
 ## Method
 
