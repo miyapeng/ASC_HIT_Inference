@@ -1,0 +1,115 @@
+samples=10  vllm
+
+=======================================
+
+Namespace(dataset='scrambled_sampled_dataset.json', model='llama2-70b-hf', tokenizer='llama2-70b-hf', input_len=None, output_len=None, num_samples=10, seed=0, trust_remote_code=False, dtype='auto')
+WARNING 01-11 23:04:30 config.py:467] Casting torch.bfloat16 to torch.float16.
+INFO 01-11 23:04:42 llm_engine.py:73] Initializing an LLM engine with config: model='llama2-70b-hf', tokenizer='llama2-70b-hf', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.float16, max_seq_len=2048, download_dir=None, load_format=auto, tensor_parallel_size=8, quantization=None, enforce_eager=True, seed=0)
+INFO 01-11 23:07:08 llm_engine.py:223] # GPU blocks: 28828, # CPU blocks: 6553
+input_token:422
+output_token:6
+Generated text:  It's important to stay
+
+input_token:965
+output_token:24
+Generated text:  `previous_rows` list, and have a `duplicate_probability` parameter to control how likely it is
+
+input_token:19
+output_token:498
+Generated text: 
+We can’t just produce a nice bar-chart like we did last time, because the tokens that are most prominent often don’t exist beyond a few times (the most frequent n-gram would be the empty n-gram, which has 365 times more occurrences than the second most frequent n-gram, which would be the empty n-gram with a single trailing token in the left padding).
+While gensim abstracts the concept of an inverse index (allowing you to get a set of documents that contain a word), it doesn’t expose an interface for you to get the words that appear in a document. Moreover, the in_vocab property is not available on documents.
+Lovely! We can see that the gensim model seems to be considerably more sensitive to repeated words, and that it identifies the matching words of the famous memetic quote more among the most frequent words (where previous listings were highly padded on the left with trash, to be filtered by the empty-n-gram heuristic).
+Why the genism word-finding was so successful is something that depends a lot on the corpus. Certainly, the fact that 4 of the 8 documents contain the famous memetic quote hurt our previous, uflappy word finder. Also, p(w|d) != p(d|w), meaning that the best model is not going to be the frequency of words, but rather the pointwise-mutual-information, or pmi. Despite this, we find that pmi seems to have dropped out of favor, in favor of embedding-based ranking.
+This is physically because of how embedding algorithms work – there is an entropy loss during word embedding, so pmi just doesn’t happen. Naive implementations of embeddings-as-a-replacement-for-tfidf could be too simplistic (tfidf cares about the inverse of term-frequency in a document, whereas embeddings don’t. The pmi frame of mind does care).
+At any rate, I’ve saved the exact model I’ve used in the box_of_perfumes file – running it on a corpus that you have in a csv can be pretty simple: gensim_imcd.whole_process.
+The generation parameters are shown in
+
+input_token:8
+output_token:251
+Generated text: , Class 9 Social Science important dates, CBSE Class 9 Chapter French Revolution important dates, Class 9 Social Science French Revolution important dates, CBSE Class 9 Important Dates. Our page by Learn Cram will help CBSE students to know the Class 9 French Revolution and important dates. Ancient India Important Dates in CBSE Class 9 Social Science, CBSE Class 9 French Revolution For this, we have provided a detailed Class 9 French Revolution important dates. SOVIET PENANT "My country - the Soviet Union"
+U.S.STEN MK2 was a machine gun, 9-mm caliber submachine gun, produced during World War II as an inexpensive alternative to the expensive Tommy Gun. The USA STEN MK2 is a reliable, low-cost weapon, used during the war by the Allies. U.S STEN Mk-2 have three modifications, and many interesting... and very ugly... Accessories. However, in the hands of the player it is one of the deadliest modern weapons of the game.
+be careful when shooting; you may not have time to reload before the
+
+input_token:292
+output_token:16
+Generated text: 
+ package org.glob3.mobile.generated; 
+public
+
+input_token:28
+output_token:448
+Generated text: 
+Having a data logger in the code enables developers as me to screen output and analyze a program’s execution. We want to have this feature to help our client – it would make you stand out against the competitors.
+Describe a given-when-then (universally accepted for unit tests) BDD scenario for logging a success message:
+Scenario: A user contextually switches to Messenger (a mode available on LG phones)
+Given that the app is opened
+When a user taps on Messaging Mode
+Then Messenger starts
+When the app is successfully switched to Messenger (i.e. it goes beyond splash screen point), the file records appropriate message under this scenario:
+ened Immersive Mode!
+Remember, for the test people described 5 steps of a scenario. A good answer from testers could have it as the guide including every element of each step.
+The first two are the same for the single product:
+Given – you must review the requirements of a product. So I’ll look for an answer with reference to our own than referring to some specific ones from my team.
+When – use my personal requirements as the guide
+Then – describe my acceptance criteria to mention that I’m looking for
+After that we continue our investigation by reviewing the last three needed elements for the Behavior-driven development scenarios: the context, event, and action.
+Context for this data logger scenario can be defined as “The feature received”, “The product in its current state” or “The total business environment”. That is, what the product for them? How did it start? Answer here could be:
+Context: When the app is successfully switched to Messenger
+Event: The event description is usually more like, “What had been done?”
+And answers like below are great:
+Event: A user taps on Messaging Mode
+Action: The Action is what a scenario describes the product does following the event. It is followed by a clause “and then”.
+Again, a good answer from the test people:
+Then: Messenger starts.
+
+input_token:12
+output_token:461
+Generated text:  ein microservice from that Repository.
+Review a sales app and provide feedback.
+Copyright ©2011-2019 D-Live Engineering Pvt. Ltd. Beautifully Photo Printed Quality Silence Earrings. Surgical Steel. From Silence Art and Beauty.
+We are looking to bring beautiful and meaningful jewelry. This earring is just amazing. Silence, the word that has helped so helped me to remember different things in my life. This Jewelry is Beautifully Photo Printed on Surgical Steel. Rhodium Plated. A rogue council has been slapped with a ban on new-builds – the first time such action has been taken with a local government.
+Environment Minister Therese Coffey joined forces with Communities Secretary Sajid Javid in a statement that placed a moratorium on the type of construction associated with high-risk pollution by sediment in and around the UK Overseas Territory of Anguilla.
+In June, Mr Javid and Ms Coffey wrote to the Anguilla Premier controlling the matter. However, the response left Mr Javid and Ms Coffey underwhelmed on matters concerning sediment controls and concluded the enforcing policy for developments “could constitute a big risk to the marine environment”.
+The poisoning of the marine environment by stagnating sediment is often caused by clogging of seagrass in shallow water. Seagrass not only provides protection to soft-bodied sea creatures, it is a key to the resilience of the coastline after hurricanes. If the underwater ecology is compromised by construction work further inland, it means erosion, rising ocean temperatures and damaging algal blooms can deftly damage the natural terrain.
+Tax-haven Anguilla is an island in the Caribbean and beyond its pristine, powder-power coastline and virgin waters is an enclave which has made it notorious for money laundering and white collar crime.
+
+input_token:38
+output_token:515
+Generated text:  Explore the context, conflict, and bond between the two characters- do they know each other or are they meeting for the first time, is one of them in a dominant or submissive position, etc. Test out different ideas and see what you come up with! Making it in Unreal: the value of bad jokes in A Fold Apart
+By Jeremy Peel
+What began as a tale of paper-folding turned into an exploration of long distance relationships.
+You’re on the phone to your partner. You know they’re still there, on the other end of the line, waiting (as indeed they must, or the conversation couldn’t continue). But you also know that, in the three dimensions the world offers up, they’re distant; until you meet them in person, they may as well be on another planet.
+The experience of logical distance versus emotional closeness forms the kernel of A Fold Apart, a curious origami puzzler currently in development at Lightning Rod Games. Fitting sheets of abstracted paper into their rightful spots is an admittedly opaque metaphor for this separation of body and mind at the heart of long distance engagements. And yet it happened upon its makers unprompted, and came to feel like their destiny.
+Mark Backler didn’t set out to portray a relationship that articulates geography. His fellow grad Austin Tyler had the idea for a game about folding paper, which later prompted grandiose vistas and a Kickstarter that promised “you will traverse vast and beautiful landscapes, while the story of a fragmented, lonely man unfolds”. (An impossible play on words that language simply doesn’t allow for. It was his first ever pitch, and he hadn’t thought it through.)
+But it was their fellow graduate, Glen Pawley, who came up with what would become A Fold Apart’s story. Now university was done, and those three core developers had moved far from each other – Mark to Canada, Austin to the US, and Glen to the UK.
+“It felt like a really good idea, because it’s relatable on a personal level,” Glen says. “All of us have experienced that sort of thing. I would put pen to paper and brainstorm what kind of things I would like in a game this way.
+“I’ve never
+
+input_token:107
+output_token:278
+Generated text:  You will NOT be expected to write the code for this, something like pseudocode is more than enough (in pseudocode my roman numerals are worth more than your gold). Every week we have prepared a special promotion.
+Promotions in Christmas holidays in Spain.
+There are some special dates in the year, when all people like get surprised, the New Year's Eve or the Inmaculate Conception for example. Try to start the year with a good resolution and we encourage you to celebrate in an amazing hotel with an special dinner, a spectacular concert and the best client service all days along.
+Christmas is a crucial date in our culture, it means, that all the hotels at the best areas prepare events. Night of the Three Wise Men and if you wish to sleep the night in another city you are in luck, Holiday rates are lower in this time, just before start the peak season.
+Class or majestic hotels in Spain prepared special plans with champagne, strawberries, jacuzzi, dinner included and mini cakes to surprise your partner.
+As every year there are some plans if you decide to spend your holidays in Spain, we test to get better rates so you can pay less.
+Enter the dates of your reservation!
+
+
+input_token:19
+output_token:330
+Generated text: .
+i like writing poems... but am not creative for one of a kind like the one you just asked.
+what was the key point of the presentation you talked about how can cities predict future power distribution networks? key info, not storytelling.
+is this question part of your exercise? or?
+From the presentation, networks with spikes or strong peaks can be caused by small disruptions in the network and can be easily predicted. On the other hand, networks with lower peaks and may take longer time to stabilize. However, due to not enough juxtaposition on the figure, it’s still hard to say which range of the network can be more stable due to the trade-off of normalized residuals and entropy. Peaks = Stability is still remains a simplification.
+sometimes when "relationship with someone" is mentioned, i feel tenetions. everytime, no matter it's true, but it's always better that the term is not mentioned everywhere I go (laughing hard). ok, try these tools: http://tesserae.caset.polimi.it and http://daintree.caset.polimi.it good luck! happy text mining and semantic analysis. winter is coming.
+is this the add instagram to your twitter as your personal profile for Obama's winning speech as the most spoken word?
+why do you only post things about writing poetry?
+will you energy deplete after writing 250 poems in a very time shortage spaced
+
+Throughput: 0.25 requests/s 
+Tokens/s: 119.82 tokens/s 
+Prompt_num_tokens:1910.00 tokens 
+Total_num_tokens:4737.00 tokens 

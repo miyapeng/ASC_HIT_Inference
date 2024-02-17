@@ -1,0 +1,20 @@
+Parameters:
+model_path='llama2-70b-hf', 
+tokenizer_path='llama2-70b-hf', 
+dtype='float16', 
+tensor_parallel_size=8,  
+
+Decoding Parameters:
+do_sample=False, num_return_sequences=1, num_beams=1,
+temperature=1.0, top_p=1
+
+same with Baseline
+
+=======================================
+Running Log:
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10000/10000 [90:08:08<00:00, 32.45s/it]
+Throughput: 0.03 requests/s 
+Tokens/s: 14.47 tokens/s 
+Prompt_num_tokens:2518687.00 tokens 
+Total_num_tokens:4694726.00 tokens 
