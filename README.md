@@ -1,5 +1,6 @@
 # The inference code for the ASC24 competition
 本人于2024年1月份参加了世界超级计算机计算大赛(ASC24),该比赛中涉及大模型Llama2的推理优化问题，特此记录我们的优化成果
+ASC24官方链接[http://www.asc-events.org/StudentChallenge/Finals.html]
 
 ## Problem Description
 Large Language Models (LLMs) have revolutionized the field of AI, demonstrating unprecedented capacity across a wide range of tasks. However, the inference process for LLMs poses certain challenges. For instance, the models are often too large to fit into memory, resulting in prolonged inference times and substantial computational costs. These obstacles hinder their widespread implementation in various applications.
